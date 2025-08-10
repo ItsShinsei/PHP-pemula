@@ -1,0 +1,16 @@
+<?php
+
+//pengkondisian/percabanjangan
+//if, else, elseif, switch, ternary
+
+$x = 20;
+if ($x < 20) {
+    echo "benar";
+} else if ($x == 20) {
+    echo "bingo!";
+} else {
+    echo "salah";
+}
+
+
+?>

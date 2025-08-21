@@ -1,0 +1,125 @@
+/* General Page Style */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fceabb, #f8b600);
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title */
+h1 {
+    color: #222;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Container for cards */
+.student-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Character card */
+.student-card {
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    padding: 20px;
+    width: 260px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.student-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,200,100,0.15), transparent 70%);
+    transform: rotate(25deg);
+    pointer-events: none;
+}
+
+.student-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Character image */
+.student-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #f8b500;
+}
+
+/* Info section */
+.student-info {
+    margin: 0;
+    padding: 0;
+}
+
+.student-info li {
+    list-style: none;
+    padding: 6px 0;
+    border-bottom: 1px dashed #ddd;
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.student-info li:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    font-weight: 600;
+    color: #444;
+    min-width: 90px;
+    display: inline-block;
+}
+
+.info-value {
+    color: #222;
+}
+
+/* Link styled as button */
+.btn-link {
+    display: flex;
+    justify-content: center; /* This centers the button */
+    margin-top: 10px;
+    
+}
+
+.btn-link a {
+    display: inline-block;
+    background: #ffbc04;
+    color: white;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border: 2px solid #d89a00;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+.btn-link a:hover {
+    background: #ff9800;
+    transform: scale(1.05);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    border-color: #e68a00;
+}

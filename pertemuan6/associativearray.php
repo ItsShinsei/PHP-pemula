@@ -6,21 +6,21 @@
     <title>latihan array</title>
     <style>
         .kotak {
-            width: 30px;
-            height: 30px;
+            width: 50px;
+            height: 50px;
             background-color: green;
             color: white;
             text-align: center;
-            line-height: 30px;
-            margin: 3px;
+            line-height: 50px;
+            margin: 9px;
             float: left;
-            transition: 0.5s;
+            transition: 0.9s;
         }
 
         .kotak:hover {
-            transform: rotate(360deg);
+            transform: rotate(720deg);
             border-radius: 50%;
-            background-color: lightblue;
+            background-color: lightgreen;
             color: black;
         }
 
@@ -33,9 +33,9 @@
 
 <?php 
 $angka = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9,10]
+    [1,2,3,4,5,6],
+    [7,8,9,10,11,12],
+    [13,14,15,16,17,18]
 ];
 ?>
 
